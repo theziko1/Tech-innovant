@@ -1,8 +1,5 @@
 'use client'
 import React from 'react'
-import Theme from "@/components/theme";
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Loader2 } from 'lucide-react';
 
