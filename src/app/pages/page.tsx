@@ -20,8 +20,8 @@ function index() {
     </div>    
         <ul className="w-full lg:grid grid-rows-1 text-center hidden cursor-pointer items-center grid-cols-5 gap-5 mr-5">
           <Link href="/pages"><li className="font-[Inter] hover:text-white">HOME</li></Link>
-          <Link href="/pages"><li className="font-[Inter] hover:text-white">PORTFOLIO</li></Link>
-          <Link href="/pages/services.tsx"><li className="font-[Inter] hover:text-white">SERVICES</li></Link>
+          <Link href="/pages/portfolio"><li className="font-[Inter] hover:text-white">PORTFOLIO</li></Link>
+          <Link href="/pages/services"><li className="font-[Inter] hover:text-white">SERVICES</li></Link>
           <Link href="/pages"><li className="font-[Inter] hover:text-white">EQUIPE</li></Link>
           <Link href="/pages"><li className="font-[Inter] hover:text-white">CONTACT</li></Link>
         </ul>
@@ -35,12 +35,12 @@ function index() {
                         }
                      </button>
          </div>
-         <div className={`${isMenuOpen ? "fixed top-[80px] list-none left-0 right-0 text-center  block bg-gray-400" : "hidden"}`}>
-         <Link href="/pages/index.tsx"><li className="font-[Inter] hover:text-white">HOME</li></Link>
-          <li className="font-[Inter] hover:text-white">PORTFOLIO</li>
-          <Link href="/pages/services.tsx"><li className="font-[Inter] hover:text-white">SERVICES</li></Link>
-          <li className="font-[Inter] hover:text-white">EQUIPE</li>
-          <li className="font-[Inter] hover:text-white">CONTACT</li>
+         <div className={`${isMenuOpen ? "absolute top-[80px] list-none p-2 left-0 right-0 text-center  block bg-gray-400" : "hidden"}`}>
+         <Link href="/pages"><li className="font-[Inter] p-1 hover:text-white">HOME</li></Link>
+         <Link href="/pages/portfolio"><li className="font-[Inter] p-1 hover:text-white">PORTFOLIO</li></Link>
+          <Link href="/pages/services"><li className="font-[Inter] p-1 hover:text-white">SERVICES</li></Link>
+          <li className="font-[Inter] p-1 hover:text-white">EQUIPE</li>
+          <li className="font-[Inter] p-1 hover:text-white">CONTACT</li>
 
           
           </div>
