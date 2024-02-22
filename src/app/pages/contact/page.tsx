@@ -3,21 +3,7 @@ import Theme from '@/components/theme'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { FaXmark , FaBars } from "react-icons/fa6";
-import { z } from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
 
-import { Button } from "@/components/ui/button"
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 
  
 
@@ -27,11 +13,7 @@ function page() {
     const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     }
-    const formSchema = z.object({
-        email: z.string().min(8).max(50),
-        subject: z.string().min(8).max(50),
-        message: z.string().min(8).max(50),
-      })
+   
    
       
      
@@ -69,54 +51,7 @@ function page() {
     <main className="container grid grid-cols-1 justify-center items-center my-6">
        <h1 className="text-center text-3xl font-medium font-[Kavoon] text-[#00BFA6]">Contact Us</h1>
        
-      <form  className="space-y-8">
-        <FormField
-          
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email</FormLabel>
-              <FormControl>
-                <Input placeholder="Enter your email" {...field} />
-              </FormControl>
-              <FormDescription>
-                This is your public display email.
-              </FormDescription>
-              <FormMessage />
-            </FormItem>
-            
-          )}
-        />
-        <FormField
-         
-          name="subject"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Subject</FormLabel>
-              <FormControl>
-                <Input placeholder="Subject" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-            
-          )}
-        />
-        <FormField
-          
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Message</FormLabel>
-              <FormControl>
-                <Textarea placeholder="Message" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-            
-          )}
-        />
-        <Button type="submit" className="bg-[#00bfa6] w-[150px]">Send</Button>
-      </form>
+      
     
     </main>
    
