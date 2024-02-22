@@ -1,6 +1,5 @@
 'use client'
 import Theme from '@/components/theme'
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { FaXmark , FaBars } from "react-icons/fa6";
@@ -29,8 +28,8 @@ function page() {
           <Link href="/pages"><li className="font-[Inter] hover:text-white">HOME</li></Link>
           <Link href="/pages/portfolio"><li className="font-[Inter] hover:text-white">PORTFOLIO</li></Link>
           <Link href="/pages/services"><li className="font-[Inter] hover:text-white">SERVICES</li></Link>
-          <Link href="/pages"><li className="font-[Inter] hover:text-white">EQUIPE</li></Link>
-          <Link href="/pages"><li className="font-[Inter] hover:text-white">CONTACT</li></Link>
+          <Link href="/pages/équipe"><li className="font-[Inter] hover:text-white">EQUIPE</li></Link>
+          <Link href="/pages/contact"><li className="font-[Inter] hover:text-white">CONTACT</li></Link>
         </ul>
         <div className="w-1/5">
             <Theme/>
@@ -46,8 +45,8 @@ function page() {
          <Link href="/pages"><li className="font-[Inter] p-1 hover:text-white">HOME</li></Link>
          <Link href="/pages/portfolio"><li className="font-[Inter] p-1 hover:text-white">PORTFOLIO</li></Link>
           <Link href="/pages/services"><li className="font-[Inter] p-1 hover:text-white">SERVICES</li></Link>
-          <li className="font-[Inter] p-1 hover:text-white">EQUIPE</li>
-          <li className="font-[Inter] p-1 hover:text-white">CONTACT</li>
+          <Link href="/pages/contact"><li className="font-[Inter] p-1 hover:text-white">EQUIPE</li></Link>
+          <Link href="/pages/contact"><li className="font-[Inter] p-1 hover:text-white">CONTACT</li></Link>
 
           
           </div>

@@ -22,8 +22,8 @@ function index() {
           <Link href="/pages"><li className="font-[Inter] hover:text-white">HOME</li></Link>
           <Link href="/pages/portfolio"><li className="font-[Inter] hover:text-white">PORTFOLIO</li></Link>
           <Link href="/pages/services"><li className="font-[Inter] hover:text-white">SERVICES</li></Link>
-          <Link href="/pages"><li className="font-[Inter] hover:text-white">EQUIPE</li></Link>
-          <Link href="/pages"><li className="font-[Inter] hover:text-white">CONTACT</li></Link>
+          <Link href="/pages/équipe"><li className="font-[Inter] hover:text-white">EQUIPE</li></Link>
+          <Link href="/pages/contact"><li className="font-[Inter] hover:text-white">CONTACT</li></Link>
         </ul>
         <div className="w-1/5">
             <Theme/>
@@ -39,8 +39,8 @@ function index() {
          <Link href="/pages"><li className="font-[Inter] p-1 hover:text-white">HOME</li></Link>
          <Link href="/pages/portfolio"><li className="font-[Inter] p-1 hover:text-white">PORTFOLIO</li></Link>
           <Link href="/pages/services"><li className="font-[Inter] p-1 hover:text-white">SERVICES</li></Link>
-          <li className="font-[Inter] p-1 hover:text-white">EQUIPE</li>
-          <li className="font-[Inter] p-1 hover:text-white">CONTACT</li>
+          <Link href="/pages/équipe"><li className="font-[Inter] p-1 hover:text-white">EQUIPE</li></Link>
+          <Link href="/pages/contact"><li className="font-[Inter] p-1 hover:text-white">CONTACT</li></Link>
 
           
           </div>
