@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { FaXmark , FaBars } from "react-icons/fa6";
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
+
 import { Button } from "@/components/ui/button"
 import {
   Form,
@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { sendEmail } from "@/lib/mail";
+
  
 
 
@@ -32,14 +32,7 @@ function page() {
         subject: z.string().min(8).max(50),
         message: z.string().min(8).max(50),
       })
-    const form = useForm<z.infer<typeof formSchema>>({
-        resolver: zodResolver(formSchema),
-        defaultValues: {
-          email: "",
-          subject: "",
-          message: "",
-        },
-      })  
+   
       
      
   return (
@@ -75,10 +68,10 @@ function page() {
     </header>
     <main className="container grid grid-cols-1 justify-center items-center my-6">
        <h1 className="text-center text-3xl font-medium font-[Kavoon] text-[#00BFA6]">Contact Us</h1>
-       <Form {...form}>
+       
       <form  className="space-y-8">
         <FormField
-          control={form.control}
+          
           name="email"
           render={({ field }) => (
             <FormItem>
@@ -95,7 +88,7 @@ function page() {
           )}
         />
         <FormField
-          control={form.control}
+         
           name="subject"
           render={({ field }) => (
             <FormItem>
@@ -109,7 +102,7 @@ function page() {
           )}
         />
         <FormField
-          control={form.control}
+          
           name="message"
           render={({ field }) => (
             <FormItem>
@@ -124,7 +117,7 @@ function page() {
         />
         <Button type="submit" className="bg-[#00bfa6] w-[150px]">Send</Button>
       </form>
-    </Form>
+    
     </main>
    
     </>
