@@ -71,8 +71,6 @@ function page() {
           <Link href="/pages/services"><li className="font-[Inter] p-1 hover:text-white">SERVICES</li></Link>
           <Link href="/pages/équipe"><li className="font-[Inter] p-1 hover:text-white">EQUIPE</li></Link>
           <Link href="/pages/contact"><li className="font-[Inter] p-1 hover:text-white">CONTACT</li></Link>
-
-          
           </div>
     </header>
     <main className="container grid grid-cols-1 justify-center items-center my-6">
