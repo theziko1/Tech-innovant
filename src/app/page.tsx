@@ -4,7 +4,6 @@ import { Loader2 } from 'lucide-react';
 import Home from './pages/page';
 
 
-
 function Page() {
   const [isLoading,setIsLoading] = useState(true)
   useEffect(() => {
