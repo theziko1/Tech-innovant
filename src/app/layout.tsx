@@ -22,12 +22,13 @@ export default function RootLayout({
   return (
   <html lang="en">
   <body className={inter.className}>
-  
+  <ThemeProvider attribute="class"  defaultTheme="system"   enableSystem  disableTransitionOnChange >
         <main className="relative overflow-hidden">
           <Navbar  />
           {children}
           <Footer  />
         </main>
+        </ThemeProvider>
      
   </body>
   </html>
