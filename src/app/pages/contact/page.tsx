@@ -11,9 +11,9 @@ import React, { useState } from 'react'
 function Page() {
   const [formData, setFormData] = useState({
     name : '',
-    email: '',
+    from: '',
     subject: '',
-    message: '',
+    body: '',
   });
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -35,12 +35,12 @@ function Page() {
         <form onSubmit={handleSubmit} className="w-full flex flex-col gap-5 items-center justify-center">
         <Label htmlFor="name"> Name</Label>
        <Input name="name" type="text" value={formData.name} onChange={handleChange} className='w-3/4'/>    
-      <Label htmlFor="email"> Email</Label>
-       <Input name="email" type="email" value={formData.email} onChange={handleChange} className='w-3/4'/>
+      <Label htmlFor="email"> From</Label>
+       <Input name="from" type="from" value={formData.from} onChange={handleChange} className='w-3/4'/>
        <Label htmlFor="subject">Subject</Label> 
       <Input name="subject" type="text" value={formData.subject} onChange={handleChange} className='w-3/4'/>
-      <Label htmlFor="message">Message</Label>
-      <Textarea name="message" value={formData.message} onChange={handleChange} className='w-3/4'/>
+      <Label htmlFor="body">Body</Label>
+      <Textarea name="body" value={formData.body} onChange={handleChange} className='w-3/4'/>
       <Button >Send</Button>
       </form>
       </section>
