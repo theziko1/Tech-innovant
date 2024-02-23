@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 
 
-function index() {
+function Home() {
   
   return (
     <>
@@ -27,4 +27,4 @@ function index() {
   )
 }
 
-export default index
+export default Home

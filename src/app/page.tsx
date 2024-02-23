@@ -1,17 +1,25 @@
 'use client'
-import React from 'react'
-import { usePathname, useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react'
 import { Loader2 } from 'lucide-react';
+import Home from './pages/page';
 
 
 
 function Page() {
-  const pathname = usePathname()
-  const {push}= useRouter()
-  if(pathname === "/") push("/pages")
+  const [isLoading,setIsLoading] = useState(true)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false); 
+    }, 1000);
+
+    return () => clearTimeout(timer); 
+
+  }, []); 
   return (
     <div className='flex h-screen w-screen items-center justify-center'>
-      <Loader2 className='animate-spin' />
+
+      { isLoading ? <Loader2 className='animate-spin' /> : (<Home/>)}
+      
     </div>
   )
 }

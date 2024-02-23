@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <header className="w-full h-20 bg-[#00BFA6] dark:bg-gray-500 flex flex-row justify-around items-center">
     <div className="w-full">
-        <Link href="/pages/services"><h1 className="font-['Kavoon'] text-lg ml-16">Tech innovant</h1></Link>
+        <h1 className="font-['Kavoon'] cursor-pointer text-lg ml-16">Tech innovant</h1>
     </div>    
         <ul className="w-full lg:grid grid-rows-1  text-center hidden cursor-pointer items-center grid-cols-5 gap-5 mr-5">
           <Link href="/pages"><li className="font-[Inter] hover:text-white">HOME</li></Link>
