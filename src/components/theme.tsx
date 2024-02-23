@@ -13,7 +13,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-function index() {
+function Index() {
   const { setTheme } = useTheme()
 
   return (
@@ -41,4 +41,4 @@ function index() {
 }
 
 
-export default index
+export default Index
