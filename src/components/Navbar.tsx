@@ -36,7 +36,7 @@ function Navbar() {
          <Link href="/pages"><li className="font-[Inter] p-1 hover:text-white">HOME</li></Link>
          <Link href="/pages/portfolio"><li className="font-[Inter] p-1 hover:text-white">PORTFOLIO</li></Link>
           <Link href="/pages/services"><li className="font-[Inter] p-1 hover:text-white">SERVICES</li></Link>
-          <Link href="/pages/équipe"><li className="font-[Inter] p-1 hover:text-white">EQUIPE</li></Link>
+          <Link href="/pages/equipe"><li className="font-[Inter] p-1 hover:text-white">EQUIPE</li></Link>
           <Link href="/pages/contact"><li className="font-[Inter] p-1 hover:text-white">CONTACT</li></Link>
           </div>
     </header>
